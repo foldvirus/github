@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/applicationContext.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/controller/before/IndexController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/IndexDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/mybatis/mybatis-config.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/po/Auser.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/po/Goods.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/util/MyUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/log4j.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/jsp/before" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/jsp/error" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.3.1.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.4.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/springmvc-servlet.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/css/before" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/css/before/daohang.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/images/before/logo.png" charset="UTF-8" />
+  </component>
 </project>

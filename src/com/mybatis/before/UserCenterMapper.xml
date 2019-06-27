@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.UserCenterDao">
+    <select id="myOrder" resultType="map" parameterType="String">
+        select dd.*,sp.mingcheng,sp.tupian from tb_dingdan dd,tb_shangpin sp
+        where dd.username=#{bemail}
+        and dd.shop=sp.id
+    </select>
+
+    <select id="myGoods" resultType="map" parameterType="Integer">
+        select sp.id,sp.mingcheng,sp.YQprice,sp.price,sp.shuliang,sp.tupian,sp.goodstype_id,my.goodid,my.userid,gy.* from tb_shangpin sp,tb_mygoods my,goodstype gy
+        where sp.id=my.goodid and my.userid=#{userid} and sp.goodstype_id=gy.id
+    </select>
+    <insert id="pinglun" parameterType="com.po.Pinglun">
+        insert into tb_pinglun(userid,spid,content,time ) value (#{userid},#{spid},#{content},#{time})
+    </insert>
+    <insert id="address" parameterType="Address">
+        insert into tb_address(uid,name,userphone,address) value (#{uid},#{name},#{userphone},#{address})
+    </insert>
+
+    <select id="order" resultType="com.po.Order" parameterType="Integer">
+        select * ,dd.id from tb_shangpin,tb_dingdan dd where id=#{shop}
+    </select>
+
+    <select id="shop" resultType="String" parameterType="Integer">
+        select shop from tb_dingdan where dd.id=#{id}
+    </select>
+
+</mapper>
